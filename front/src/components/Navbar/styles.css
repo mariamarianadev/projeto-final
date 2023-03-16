@@ -1,0 +1,53 @@
+.ds{
+    color: #C92071;
+    position: absolute;
+    align-items: stretch;
+    /* text-align: center; */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5rem;
+    line-height: 44px;
+    letter-spacing: -0.01em;
+    top: 0%;
+    /* left: 4%; */
+    margin: 10px;
+    }
+    
+.red {
+    color: #C92071;
+    position: absolute;
+    left: 90%;
+    /* right: 11.46%; */
+    top: 22px;
+    bottom: 30.27%;
+    /* font-size: 2rem; */
+    margin: 10px;
+}
+
+.entrar{
+    color: #f5f5f5;
+    background-color: #C92071;
+    border: none;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.75px;
+    position: absolute;
+    width: 114px;
+    height: 40px;
+    border-radius: 8px;
+    left: 77%;
+    top: 15px;
+
+    margin: 10px;
+}
+
+.procura{
+    position: absolute;
+    width: 559px;
+    height: 60px;
+    left: 384px;
+    top: 0px;
+
+    margin: 10px;
+}

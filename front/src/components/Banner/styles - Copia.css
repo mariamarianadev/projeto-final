@@ -1,0 +1,49 @@
+.botao {
+    background-color: #C92071;
+    color: white;
+    position: absolute;
+    width: 220px;
+    height: 48px;
+    border-radius: 8px;
+    border: 0px;
+    margin-top: 500px;
+    left: 100px;
+   
+}
+
+
+.text h5{
+    color: #F6AA1C;
+    position: absolute;
+    width: 280px;
+    height: 24px;
+    left: 100px;
+    top: 318px;
+}
+
+
+.h{ position: absolute;
+    width: 510px;
+    height: 132px;
+    left: 100px;
+    top: 362px;
+    font-weight: 800;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 1px;
+
+}
+.desc{
+    position: absolute;
+    width: 495px;
+    height: 68px;
+    left: 100px;
+    top: 514px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 34px;    
+    letter-spacing: 0.75px;
+    
+}
