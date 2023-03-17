@@ -5,6 +5,7 @@ import Navbar from "../../components/Navbar";
 
 function CadaProduto(props) {
     const [quantidade, alterarQuantidade] = React.useState(1);
+    
 
     const add = () => {
         alterarQuantidade(quantidade + 1);
@@ -39,6 +40,12 @@ function CadaProduto(props) {
 
 
 export default function Produtos() {
+    const [lista, setLista] = React.useState([]);
+    React.useEffect(() =>{
+        fetch('http://localhost:8000/produtos')
+        .then(resp => resp.json())
+        .then (dados => setLista(dados));
+    },  [] )
     return (
         <div>
 
@@ -48,21 +55,16 @@ export default function Produtos() {
             <hr/>
 
             <Grid container spacing={4}>
-                <Grid item>
-                    <CadaProduto produto="Pratinho" valor="8.90"/>
-                </Grid>
+                {lista.map(cada => {
+                    return (
+                        <Grid item>
+                        <CadaProduto produto={cada.nome} valor={cada.preco}/>
+                        </Grid>
+                    )
+                })
 
-                <Grid item>
-                    <CadaProduto produto="Heineken" valor="10" desconto="10%"/>
-                </Grid>
-
-                <Grid item>
-                    <CadaProduto produto="Coca Cola" valor="4.90"/>
-                </Grid>
-
-                <Grid item>
-                    <CadaProduto produto="Agua com gas" valor="3.90"/>
-                </Grid>
+                }
+                
             </Grid>
         </div>
     )
